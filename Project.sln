@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ispan.Movie", "MovieCategory\Ispan.Movie.csproj", "{9919C399-A0A7-4FBD-80D4-9D042533613E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISpan.Utility", "ISpan.Utility\ISpan.Utility.csproj", "{5D7EC9B7-B661-4B6B-AAC1-A1F467266844}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9919C399-A0A7-4FBD-80D4-9D042533613E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9919C399-A0A7-4FBD-80D4-9D042533613E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9919C399-A0A7-4FBD-80D4-9D042533613E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9919C399-A0A7-4FBD-80D4-9D042533613E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D7EC9B7-B661-4B6B-AAC1-A1F467266844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D7EC9B7-B661-4B6B-AAC1-A1F467266844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D7EC9B7-B661-4B6B-AAC1-A1F467266844}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D7EC9B7-B661-4B6B-AAC1-A1F467266844}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFD38443-9DF5-42AD-8CB0-29889124DA3C}
+	EndGlobalSection
+EndGlobal

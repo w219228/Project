@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9919C399-A0A7-4FBD-80D4-9D042533613E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MovieCategory</RootNamespace>
+    <AssemblyName>MovieCategory</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>..\..\老師上課打的\20221117_iSpan.Solution\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CreateManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateManageForm.Designer.cs">
+      <DependentUpon>CreateManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateMovieCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateMovieCategoryForm.Designer.cs">
+      <DependentUpon>CreateMovieCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateMovieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateMovieForm.Designer.cs">
+      <DependentUpon>CreateMovieForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditManageForm.Designer.cs">
+      <DependentUpon>EditManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditMovieCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMovieCategoryForm.Designer.cs">
+      <DependentUpon>EditMovieCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditMovieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMovieForm.Designer.cs">
+      <DependentUpon>EditMovieForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="infra\DAOs\ManageDAO.cs" />
+    <Compile Include="infra\DAOs\MovieCategoryDAO.cs" />
+    <Compile Include="infra\Extenstions\StringExtenstions.cs" />
+    <Compile Include="infra\ValidationHelper.cs" />
+    <Compile Include="ManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageForm.Designer.cs">
+      <DependentUpon>ManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageLoginForm.Designer.cs">
+      <DependentUpon>ManageLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageMainForm.Designer.cs">
+      <DependentUpon>ManageMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DTOs\ManageDTO.cs" />
+    <Compile Include="Models\DTOs\MovieCategoryDTO.cs" />
+    <Compile Include="Models\DTOs\MovieDTO.cs" />
+    <Compile Include="Models\Services\ManageService.cs" />
+    <Compile Include="Models\Services\MovieCategoryService.cs" />
+    <Compile Include="Models\Services\MovieService.cs" />
+    <Compile Include="Models\ViewModels\ManageIndexVM.cs" />
+    <Compile Include="Models\ViewModels\ManageLoginVM.cs" />
+    <Compile Include="Models\ViewModels\MovieCategoryVM.cs" />
+    <Compile Include="Models\ViewModels\MovieVM.cs" />
+    <Compile Include="MovieCategoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieCategoryForm.Designer.cs">
+      <DependentUpon>MovieCategoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieForm.Designer.cs">
+      <DependentUpon>MovieForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CreateManageForm.resx">
+      <DependentUpon>CreateManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateMovieCategoryForm.resx">
+      <DependentUpon>CreateMovieCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateMovieForm.resx">
+      <DependentUpon>CreateMovieForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditManageForm.resx">
+      <DependentUpon>EditManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMovieCategoryForm.resx">
+      <DependentUpon>EditMovieCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMovieForm.resx">
+      <DependentUpon>EditMovieForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageForm.resx">
+      <DependentUpon>ManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageLoginForm.resx">
+      <DependentUpon>ManageLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageMainForm.resx">
+      <DependentUpon>ManageMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieCategoryForm.resx">
+      <DependentUpon>MovieCategoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieForm.resx">
+      <DependentUpon>MovieForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\DataSources\MovieCategory.Models.ViewModels.ManageIndexVM.datasource" />
+    <None Include="Properties\DataSources\MovieCategory.Models.ViewModels.MovieCategoryIndexVM.datasource" />
+    <None Include="Properties\DataSources\MovieCategory.Models.ViewModels.MovieCategoryVM.datasource" />
+    <None Include="Properties\DataSources\MovieCategory.Models.ViewModels.MovieIndexVM.datasource" />
+    <None Include="Properties\DataSources\MovieCategory.Models.ViewModels.UserIndexVM.datasource" />
+    <None Include="Properties\DataSources\MovieCategoryForm.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ISpan.Utility\ISpan.Utility.csproj">
+      <Project>{5d7ec9b7-b661-4b6b-aac1-a1f467266844}</Project>
+      <Name>ISpan.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
